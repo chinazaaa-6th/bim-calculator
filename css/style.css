@@ -1,0 +1,52 @@
+.container {
+  padding: 50px 10px 200px;
+  border: 10px solid black;
+  color: rgb(238, 234, 229);
+  background: rgb(131, 113, 113);
+}
+.container-metric {
+  padding: 50px 10px 200px;
+  border: 10px solid black;
+  color: black;
+  background: rgb(100, 67, 67);
+}
+body {
+  margin-top: 20px;
+  max-width: 70%;
+  font-family: "Dancing Script";
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px !important;
+  font-style: italic;
+  font-family: "Alumni Sans Inline One" !important;
+  color: black;
+}
+.stand {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: white;
+  background: black;
+}
+.metric {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: white;
+  background: rgb(153, 126, 126);
+  margin-left: 140px;
+}
+.builtin {
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  margin: 100px;
+}
+@media (max-width: 600px) {
+  body {
+    max-width: 100% !important;
+    height: 100% !important;
+  }
+}
