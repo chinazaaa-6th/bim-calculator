@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This page contains a Body Mass Index(BMI) calculation fits. Helps you know if you need to eat more, less or maintain eating habits"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,11 +25,18 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>BMI Calculator</title>
   </head>
   <body>
-    <a href="standard.html" class="stand text-start">STANDARD</a>
-    <a href="metric.html" class="metric text-center">METRIC</a>
+    <a
+      href="standard.html"
+      class="stand text-start"
+      title="standard measurement"
+      >STANDARD</a
+    >
+    <a href="metric.html" class="metric text-center" title="metric measurements"
+      >METRIC</a
+    >
     <div class="container">
       <h1 class="text-center">BMI Calculator</h1>
       <div class="section mt-5">
@@ -53,20 +64,12 @@
       </div>
       <div class="row">
         <div class="col text-lg-start">
-          <label for="textInput1" class="col-form-label">Your Weight:</label>
+          <label for="stand-weight" class="col-form-label">Your Weight:</label>
         </div>
         <div class="col">
           <input
             type="text"
-            id="textInput1"
-            class="form-control"
-            placeholder="Kilogram"
-          />
-        </div>
-        <div class="col">
-          <input
-            type="text"
-            id="textInput2"
+            id="stand-weight"
             class="form-control"
             placeholder="Pounds"
           />
@@ -75,32 +78,25 @@
 
       <div class="row mt-3">
         <div class="col text-lg-start">
-          <label for="textInput3" class="">Your Height:</label>
+          <label for="stand-height" class="">Your Height:</label>
         </div>
         <div class="col">
           <input
             type="text"
-            id="textInput3"
-            class="form-control"
-            placeholder="Feet"
-          />
-        </div>
-        <div class="col">
-          <input
-            type="text"
-            id="textInput"
+            id="stand-height"
             class="form-control"
             placeholder="Inches"
           />
         </div>
       </div>
-      <button class="builtin mt-5 text-center">Calculate BMI</button>
+      <button class="builtin mt-5 text-center" id="stn">Calculate BMI</button>
       <footer>
         <h6>
-          Your BMI:
-          <p id="standard-bmi"></p>
+          Your BMI:<small id="standard"></small>
+          <p id="stand-alert"></p>
         </h6>
       </footer>
     </div>
+    <script src="src/file.js"></script>
   </body>
 </html>

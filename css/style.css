@@ -41,6 +41,10 @@ h1 {
   display: block;
   margin: 0 auto;
 }
+.builtin:hover {
+  background: black;
+  color: blueviolet;
+}
 footer {
   margin: 100px;
 }
