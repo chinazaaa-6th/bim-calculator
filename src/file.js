@@ -3,9 +3,6 @@ function calculateStand() {
   let sheight = document.querySelector("#stand-height");
   let result = document.querySelector("#standard");
   let alrt = document.querySelector("#stand-alert");
-  seeCondition();
-}
-function seeCondition() {
   if (sweight === "") {
     result.innerHTML = "  Please provide a valid digit.";
   } else {
